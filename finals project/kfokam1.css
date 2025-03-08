@@ -638,7 +638,7 @@ footer{
 
     section {
         /* Adjust section styles for phones */
-        height: calc(100% - 265px);
+        height: calc(100% - 365px);
     }
 
     .box-max {
@@ -700,7 +700,7 @@ footer{
 
     footer {
         /* Adjust footer styles for phones */
-        height: 10%;
+        height: 20%;
         padding: -5% 0; /* Add padding */
     }
 
