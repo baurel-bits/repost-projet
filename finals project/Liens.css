@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", serif;
+}
+
+body{
+    background-color: rgb(142, 206, 223);
+    height: 100vh;
+}
+
+.typewriter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    b{
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+
+.typewriter p{
+    font-family: serif;
+    margin-inline: auto;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    border-right: 1px solid;
+    animation: typing 5s steps(19) forwards infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #7f99df;
+    color: #fff;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+section{
+    height: calc(100vh + 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    text-align: center;
+}
+
+.error_message{
+    color: rgb(226, 30, 30);
+    padding: 15px;
+}
+
+input, button{
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    width: 100%;
+}
+input{
+    background-color: #dfdef4;
+}
+
+button{
+    background-color: #55ade0;
+    color: #fff;
+}
+.result{
+    margin-top: 10px;
+    color: #4da6ee;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    font-size: 13px;
+    border: 1px solid #29b4df;
+}
+
+

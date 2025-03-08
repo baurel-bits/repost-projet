@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(5, 154, 221, 1);
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.typewriter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    b{
+        color: #fff;
+        padding: 10px;
+    }
+}
+
+
+.typewriter p{
+    font-family: serif;
+    margin-inline: auto;
+    text-transform: lowercase;
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    border-right: 1px solid;
+    animation: typing 5s steps(19) forwards infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+
+
+
+.Message{
+    color: #fff;
+    padding: 5px 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+section{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calcul{
+    display: flex;
+}
+.calcul h1{
+    color: #fff;
+    font-size: 50px;
+    margin: 0 20px ;
+}
+.calcul h2{
+    color: #fff;
+    margin: 10px 0;
+}
+section input{
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+section input[type="submit"]{
+    padding: 10px 65px;
+    border: 0;
+    background-color: rgba(6, 60, 236, 0.333);
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 0.5s;
+}
+section input[type="submit"]:hover{
+    letter-spacing: 2px;
+}
+
+.score{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+a{
+    color: #fff;
+    text-decoration: 0;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 25px 0;
+    display: none;
+}

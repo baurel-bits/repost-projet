@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(94, 179, 228);
+    flex-direction: column;
+}
+
+
+.typewriter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+    b{
+        color: #fff;
+        padding: 10px;
+    }
+}
+
+
+.typewriter p{
+    font-family: serif;
+    margin-inline: auto;
+    text-transform: lowercase;
+    font-size: 1.3em;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2%;
+    color: white;
+    border-right: 1px solid;
+    animation: typing 8s steps(22) forwards infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    width: 35%;
+    height: 29%;
+}
+.jeu {
+    width: 90%;
+    height: 200px;
+    border: 1px solid #000;
+    overflow: hidden;
+    border: 0;
+    border-bottom: 1px solid #18f;
+}
+
+.perso{
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+}
+
+.animation {
+    animation:  perso-saut 500ms infinite;
+}
+
+/*Animation personnage saute*/
+@keyframes   perso-saut {
+    0%{
+        top: 130px;
+    }
+    25% {
+        top: 80px;
+    }
+    50% {
+        top: 80px;
+    }
+    100% {
+        top: 130px;
+    }
+}
+
+
+
+.perso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.obstacles {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    position: relative;
+    top:130px;
+    left: 80%;
+    border-radius: 50%;
+    animation: anime-obstacles 2.5s infinite ;
+    
+}
+
+/*animation obstacles*/
+
+@keyframes anime-obstacles {
+    0%{
+        left: 480px;
+    }
+    100% {
+        left: -40px;
+    }
+
+}
+
+
+
+.control {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a,button {
+    padding: 10px 50px;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 15px;
+    text-decoration: 0;
+    color: #000;
+}
+
+/* Styles for screens smaller than 768px (phones) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .jeu {
+        /* height: 20vh; */
+    }
+
+    .control {
+        margin-top: 10px;
+    }
+
+    a,
+    button {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}
+

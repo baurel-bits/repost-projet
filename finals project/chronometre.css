@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    font-family: "Dancing Script", serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #228ac7;
+    transition: 0.6s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.typewriter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+
+    b{
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+    }
+}
+
+
+.typewriter p{
+    font-family: serif;
+    margin-inline: auto;
+    text-transform: lowercase;
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    border-right: 1px solid;
+    animation: typing 5s steps(22) forwards infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+
+.chronometre{
+    background-color: rgb(56, 172, 240);
+    padding: 50px 20px;
+    border-radius: 6px;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+.chronometre:hover{
+    transform: scale(1.01);
+}
+.tim{
+    margin: auto;
+    position: relative;
+    top: 5px;
+    width: 100%;
+    border: 1px solid cyan;
+    border-radius: 6px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #a3cdf0;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.tims{
+    margin: auto;
+    width: 100%;
+    border: 2px solid #333;
+    padding: 1px 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.tim span{
+        font-family: "Dancing Script", cursive;
+        padding: 5px;
+        width: 40px;
+}
+
+.tim span:hover{
+    color: cyan;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+button{
+    background-color: #3eb9cf;
+    color: cyan;
+    font-size: 25px;
+    padding: 30px 20px;
+    border-radius: 49%;
+    width: 25%;
+    height: 30%;
+    border: 1px solid cyan;
+    letter-spacing: 1px;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(131, 67, 67, 0.3) 0px 3px 7px -3px;
+}
+button:hover{
+    transform: scale(0.9);
+    transform: translateY(-12px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}

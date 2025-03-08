@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(32, 178, 223);
+}
+
+
+.typewriter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    b{
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+    }
+}
+
+
+.typewriter p{
+    font-family: serif;
+    margin-inline: auto;
+    text-transform: lowercase;
+    font-size: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    border-right: 1px solid;
+    animation: typing 5s steps(22) forwards infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+
+
+header{
+    margin: 50px;
+}
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(69, 70, 5, 0.09) 04px 30px 12px;
+}
+
+.choix{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.choix h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: #999;
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin: 20px 0;
+}
+
+button{
+    padding: 5px 25px;
+    margin-top: 20px;
+    border: 1px solid #5372f0;
+    background-color: #16a4e6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+button:focus{
+    background: #fff;
+    color: #5372f0;
+}

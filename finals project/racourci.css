@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #5272ef;
+}
+
+
+
+.typewriter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+
+    b{
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+    }
+
+}
+
+
+.typewriter p{
+    font-family: serif;
+    margin-inline: auto;
+    text-transform: lowercase;
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    border-right: 1px solid;
+    animation: typing 5s steps(19) forwards infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+.wrapper{
+    width: 460px;
+    background-color: #fff;
+    padding: 18px 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+}
+
+.wrapper :where(.title , .details){
+    display: flex;
+    align-items: center;
+}
+
+.title img{
+    max-width: 21px;
+}
+
+.title h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.copyBtn img{
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    margin: 10px 0;
+    width: 100%;
+
+}
+.content p{
+    font-size: 15px;
+}
+
+.content input{
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #a6a6a6;
+    outline: none;
+}
+
+.details{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details div{
+    display: flex;align-items: center;
+}
+
+#shortUrl{
+    font-style: italic;
+    font-size: 13px;
+    color: #5272ef;
+}
+.copyBtn{
+    background-color: #fff;
+    padding: 9px ,15px;
+    border-radius: 5px;
+    border: 1px solid #a6a6a6;
+    margin-right: 10px;
+}
+
+.generateLinkBtn{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-style: 14px;
+    padding: 9px 15px;
+    background-color: #5272ef;
+    border-radius: 5px;
+}

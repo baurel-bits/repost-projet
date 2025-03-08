@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <! <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Onglet site</title>
+    <link rel="stylesheet" href="onglets.css">
+</head>
+<body>
+    <div class="tab">
+        <button onclick="openOnglet(event,'Home')" class="tablinks">Home</button>
+        <button onclick="openOnglet(event ,'Contact')" class="tablinks">Contact</button>
+        <button onclick="openOnglet(event,'Reservation')" class="tablinks">Reservation</button>
+        <button onclick="openOnglet(event,'Boutique')" class="tablinks">Boutique</button>
+    </div> <br>
+
+    <div class="typewriter">
+        <b>Projet 10:</b>
+        <p> Créer des Onglets</p>
+    </div>
+
+    <div class="tabcontent" id="Home">
+        <h3>Home</h3>
+        <p>Bienvenue sur la page Home</p>
+        <div class="picture">
+            <img src="img1.jpg">
+        </div>
+    </div>
+    <div class="tabcontent" id="Contact">
+        <h3>Contact</h3>
+        <p>Bienvenue sur la page Contact</p>
+        <div class="picture">
+            <img src="img2.jpg">
+        </div>
+    </div>
+    <div class="tabcontent" id="Reservation">
+        <h3>Reservation</h3>
+        <p>Bienvenue sur la page Reservation</p>
+        <div class="picture">
+            <img src="img3.jpg">
+        </div>
+    </div>
+    <div class="tabcontent" id="Boutique">
+        <h3>Boutique</h3>
+        <p>Bienvenue sur la page Boutique</p>
+        <div class="picture">
+            <img src="img4.jpg">
+        </div>
+    </div>
+
+    <script src="onglets.js"></script>
+</body>
+</html>
